@@ -1,0 +1,2 @@
+Aprendizados da semana
+nesta minha primeira semana com a **labenu** aprendi inumeras coisa tanto simples quanto complexas, por exemplo desde a editar uma pasta ate como mexer no terminal em um git-bash.
