@@ -26,7 +26,7 @@ function exercicio1 () {
 
  frase = 'eu sou' (nome) , 
 "Eu sou" [nome],"tenho" [idade],"anos, moro em" [cidade], "e sou " [profissão])
-}
+}u
 console.log (frase) exercicio1(
 )
 //------------------------------------------------------------------------------------------//
