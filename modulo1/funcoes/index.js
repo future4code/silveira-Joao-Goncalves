@@ -33,3 +33,29 @@ console.log (frase) exercicio1(
 //ex2//
 
 
+
+
+
+
+let areadotriangul = (ladodotriangulo,basedotriangulo) => {
+    return ladodotriangulo * basedotriangulo
+};
+    function areadotriangul = ladodotriangulo * basedotriangulo{
+    const valores= (ladodotriangulo(10)basedotriangulo(20))
+    return = areadotriangul
+    }
+    return areadotriangul;
+    }
+    
+console.log=areadotriangul(100(10*20))
+
+
+
+
+
+
+
+
+
+
+
