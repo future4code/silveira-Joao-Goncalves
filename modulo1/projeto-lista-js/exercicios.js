@@ -39,8 +39,12 @@ imprimeIdade()
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-
+  const peso = prompt("qual o seu peso?")
+  const altura = prompt("qual a sua altura?")
+  let calculaIMC = peso  (altura * altura)
+  console.log(calculaIMC)
 }
+calculaIMC()
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
