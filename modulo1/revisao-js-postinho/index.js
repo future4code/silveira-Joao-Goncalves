@@ -97,20 +97,21 @@ const primeiraDose = () => {
     let data = ""
     if(vacina==="coronavac"){
         tempo = 28
+        data  = 12/04/2022
         return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}.`
     }if(vacina==="Astranezeca"){
        tempo = 90
+       data = 13/06/2022
       return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}.`
     }if(vacina==="Pfizer")
        tempo = 90
-       return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}.`
-      
-       //  Sua lógica aqui
+       data = 13/06/2022
+       return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}.`//
+   
+}
 
 
-
-
-console.log(primeiraDose())
+       console.log(primeiraDose())
 
 
 // LOOP+CONDICIONAL
@@ -125,9 +126,14 @@ const segundaDose = (nomeDoUsuario) => {
     ]
 
     //  Sua lógica aqui
+    for  ( i=0 ; i<2 ; i++){
+        if(nomeDoUsuario === usuarios[i].nome){
+            usuarios[i].imunizacao = "completa"
+        }
+    }
 
 
-}
+console.log(usuarios)}
 console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
@@ -140,6 +146,12 @@ const avisoAosAtrasados = () => {
     ]
 
     //  Sua lógica aqui
+    for  ( let i=0 ; i<=usuarios.length-1 ; i++){
+        if(usuarios[i].imunizacao !== "completa"){
+         console.log(`Olá ${usuarios[i].nome}! Sua imunização está ${usuarios[i].imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
+        }
+    }
+
 
 }
 console.log(avisoAosAtrasados());
@@ -177,6 +189,31 @@ const usuarios = [
 
 const cadastroDesafio = () => {
     //  Sua lógica aqui
+    
+    let nome = prompt("digite seu nome:")
+    let anoDeNascimento = Number(prompt("digite o seu ano de nascimento:"))
+    let senha = prompt ("Digite uma seenha com 6 caracteres:")
+    let nacionalidade = prompt ("Qual a sua nacionalidade:")
+    let idade = (2022-anoDeNascimento)
+    
+    if(idade < 18 ){
+        return "erro no cadastro"
+    }
+    if(senha.length < 6){
+        return "erro no cadastro"
+    }
+    if(nacionalidade !== "Brasil"){
+        return "erro no cadastro"
+    }
+      const pessoa = {
+    ...usuarios
+    nome : nome,
+    ano :anoDeNascimento,
+    SenhaDoUsuario:senha,
+    nacionalidade:nacionalidae
+}
+    usuario.push(...usuarios)
+    return usuarios
 }
 console.log(cadastroDesafio());
 
@@ -197,4 +234,4 @@ console.log(segundaDoseDesafio("ALGUM NOME AQUI"));
 const avisoAosAtrasadosDesafio = () => {
     //  Sua lógica aqui
 }
-console.log(avisoAosAtrasadosDesafio());
+console.log(avisoAosAtrasadosDesafio())
